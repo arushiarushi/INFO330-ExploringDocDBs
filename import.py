@@ -43,7 +43,3 @@ for row in sql_cursor.execute("SELECT name FROM pokemon"):
         }
         pokemon_collection.insert_one(pokemon_dict)
 
-# Get the list of collections in the database and print the count
-collection_list = pokemonDB.list_collection_names()
-collection_count = len(collection_list)
-print(f"Number of collections in the 'pokemondb' database: {collection_count}")
